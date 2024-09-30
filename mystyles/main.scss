@@ -1,18 +1,19 @@
 @use "partials/colors";
-@use "partials/vendor";
-.name{
-	color:white;
-	text-decoration: underline;
-	font-size: 17px;
-	padding-left: 50px;
-	position: absolute;
-	float: left;
-	text-transform: uppercase;
-	font-family:"Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, "sans-serif";
-	
-    }
-nav{
+@use "vendor/normalize";
+@media screen and (min-width: 768px) {
+    nav{
     background-color: colors.$darker-background;
+    .name{
+        color:white;
+        text-decoration: underline;
+        font-size: 17px;
+        padding-left: 50px;
+        position: absolute;
+        float: left;
+        text-transform: uppercase;
+        font-family:"Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, "sans-serif";
+        
+        }
     ul {
         list-style-type: none;
         overflow: hidden;
@@ -41,11 +42,11 @@ nav{
 
 .left{
 	left: 0;
+    text-align: center;
     .orange{
 
         color: colors.$secondary-font-color;
         font-size:70px;
-        text-align: center;
         font-family: "Satisfy", cursive;
         font-weight: 400;
         font-style: normal;
@@ -53,7 +54,6 @@ nav{
     
     }
     .bold{
-        text-align:center;
         font-size:50px;
         text-transform: uppercase;
         font-family:"Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, "sans-serif";
@@ -67,7 +67,6 @@ nav{
   
         }
     .p{
-        text-align: center;
         color: colors.$primary-font-color;
         font-size: 23px;
     }
@@ -75,7 +74,6 @@ nav{
         color:#C98440;
         text-decoration: underline;
         display:block;
-        text-align:center;
         text-transform: uppercase;
         font-family:"Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, "sans-serif";
     }
@@ -96,16 +94,18 @@ footer{
     position: fixed;
     bottom: 0;
     width: 100%;
+	position: fixed;
     background-color: colors.$dark-background;
     color:#f3efe1;
     font-size: 12px;
-}
     .fleft{
-        padding-left: 50px;
-        float: left;
+        float:left;
+        padding-left: 12%;
     }
     .fright{
-        float: right;
-       padding-right: 50px;
+      float:right;
+    padding-right: 12%;
     }
+}
+}
 
