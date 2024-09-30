@@ -4,14 +4,13 @@
   font-size: 17px;
   padding-left: 50px;
   position: absolute;
-  left: 5px;
   float: left;
   text-transform: uppercase;
   font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, "sans-serif";
 }
 
 nav {
-  background-color: #333;
+  background-color: #150300;
 }
 nav ul {
   list-style-type: none;
@@ -41,7 +40,7 @@ nav li a.current {
   left: 0;
 }
 .left .orange {
-  color: #C98440;
+  color: #DB8D33;
   font-size: 70px;
   text-align: center;
   font-family: "Satisfy", cursive;
@@ -63,7 +62,7 @@ nav li a.current {
 }
 .left .p {
   text-align: center;
-  color: #504C4C;
+  color: #575757;
   font-size: 23px;
 }
 .left .about a:link {
@@ -82,4 +81,23 @@ nav li a.current {
   display: block;
   margin-left: auto;
   margin-right: auto;
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: #414141;
+  color: #f3efe1;
+  font-size: 12px;
+}
+
+.fleft {
+  padding-left: 50px;
+  float: left;
+}
+
+.fright {
+  float: right;
+  padding-right: 50px;
 }/*# sourceMappingURL=main.css.map */

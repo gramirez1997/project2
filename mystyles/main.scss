@@ -1,18 +1,18 @@
 @use "partials/colors";
+@use "partials/vendor";
 .name{
 	color:white;
 	text-decoration: underline;
 	font-size: 17px;
 	padding-left: 50px;
 	position: absolute;
-	left: 5px;
 	float: left;
 	text-transform: uppercase;
 	font-family:"Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, "sans-serif";
 	
     }
 nav{
-    background-color: #333;
+    background-color: colors.$darker-background;
     ul {
         list-style-type: none;
         overflow: hidden;
@@ -92,3 +92,20 @@ nav{
             }
             
     }
+footer{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: colors.$dark-background;
+    color:#f3efe1;
+    font-size: 12px;
+}
+    .fleft{
+        padding-left: 50px;
+        float: left;
+    }
+    .fright{
+        float: right;
+       padding-right: 50px;
+    }
+
