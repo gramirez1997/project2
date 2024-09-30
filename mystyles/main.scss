@@ -1,3 +1,4 @@
+@use "partials/colors";
 .name{
 	color:white;
 	text-decoration: underline;
@@ -41,8 +42,8 @@ nav{
 .left{
 	left: 0;
     .orange{
-	
-        color:#C98440;
+
+        color: colors.$secondary-font-color;
         font-size:70px;
         text-align: center;
         font-family: "Satisfy", cursive;
@@ -67,7 +68,7 @@ nav{
         }
     .p{
         text-align: center;
-        color:#504C4C;
+        color: colors.$primary-font-color;
         font-size: 23px;
     }
     .about a:link{
